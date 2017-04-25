@@ -48,7 +48,7 @@ $("#movies ul").on('click', 'li', function(e){
 		method: 'get',
 		success: response => {
 			let episode = id2episode(response.episode_id);
-			let text = 'Episode ${episode}' + '\n' +
+			let text = 'Episode ' + episode + '\n' +
 					 	response.title + '\n\n' +
 			 		    response.opening_crawl;
 
